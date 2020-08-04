@@ -274,9 +274,9 @@ def async_file_processing(file_id, bytearr):
         logging.debug(f'async_file_processing file_id={file_id}, bytearr={len(bytearr)}')
 
         # Get pages
-		# For OS Windows / for the independence of the program from the built-in OS libraries, the poppler library is included in the program folder
+	# For OS Windows / for the independence of the program from the built-in OS libraries, the poppler library is included in the program folder
         # pages = convert_from_bytes(bytearr, poppler_path='env/poppler-0.68.0/bin')
-		# For OS Linux
+	# For OS Linux
         pages = convert_from_bytes(bytearr)
         res = None
         logging.debug(f'pages={len(pages)}')
