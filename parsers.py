@@ -9,7 +9,8 @@ file_upload.add_argument('File',
                          location='files', 
                          required=True, 
                          help='PDF file')
-# Requirement for input file and for show on swagger
+
+# Requirement for input id and for show on swagger
 id_of_file = reqparse.RequestParser()
 id_of_file.add_argument('ID',
                          type=int,
