@@ -1,0 +1,98 @@
+2020-08-04 09:44:49,602 :: root - INFO :: Current logging level: DEBUG
+2020-08-04 09:44:49,603 :: tensorflow - WARNING :: From app.py:120: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-08-04 09:44:49,603 :: tensorflow - WARNING :: From /home/manapov/miniconda3/envs/seal_detection/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:541: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-08-04 09:44:49,609 :: tensorflow - WARNING :: From /home/manapov/miniconda3/envs/seal_detection/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:4432: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-08-04 09:44:49,626 :: tensorflow - WARNING :: From /home/manapov/miniconda3/envs/seal_detection/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:2139: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2020-08-04 09:44:49,627 :: tensorflow - WARNING :: From /home/manapov/miniconda3/envs/seal_detection/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:4267: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2020-08-04 09:44:51,332 :: tensorflow - WARNING :: From /home/manapov/miniconda3/envs/seal_detection/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:2239: The name tf.image.resize_nearest_neighbor is deprecated. Please use tf.compat.v1.image.resize_nearest_neighbor instead.
+
+2020-08-04 09:44:51,622 :: tensorflow - WARNING :: From /home/manapov/seal_detect_api_LIMS/mrcnn/model.py:341: The name tf.log is deprecated. Please use tf.math.log instead.
+
+2020-08-04 09:44:51,629 :: tensorflow - WARNING :: From /home/manapov/seal_detect_api_LIMS/mrcnn/model.py:399: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-08-04 09:44:51,633 :: tensorflow - WARNING :: From /home/manapov/seal_detect_api_LIMS/mrcnn/model.py:423: calling crop_and_resize_v1 (from tensorflow.python.ops.image_ops_impl) with box_ind is deprecated and will be removed in a future version.
+Instructions for updating:
+box_ind is deprecated, use box_indices instead
+2020-08-04 09:44:51,802 :: tensorflow - WARNING :: From /home/manapov/seal_detect_api_LIMS/mrcnn/model.py:720: The name tf.sets.set_intersection is deprecated. Please use tf.sets.intersection instead.
+
+2020-08-04 09:44:51,804 :: tensorflow - WARNING :: From /home/manapov/seal_detect_api_LIMS/mrcnn/model.py:722: The name tf.sparse_tensor_to_dense is deprecated. Please use tf.sparse.to_dense instead.
+
+2020-08-04 09:44:51,873 :: tensorflow - WARNING :: From /home/manapov/seal_detect_api_LIMS/mrcnn/model.py:772: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-08-04 09:44:52,102 :: root - DEBUG :: MaskRCNN MODEL_DIR: /home/manapov/seal_detect_api_LIMS/weights
+2020-08-04 09:44:52,102 :: root - DEBUG :: Loading weights: /home/manapov/seal_detect_api_LIMS/weights/seal20200221T1748/mask_rcnn_seal_0030.h5
+2020-08-04 09:44:52,942 :: tensorflow - WARNING :: From /home/manapov/miniconda3/envs/seal_detection/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:190: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-08-04 09:44:52,942 :: tensorflow - WARNING :: From /home/manapov/miniconda3/envs/seal_detection/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:197: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-08-04 09:44:52,942 :: tensorflow - WARNING :: From /home/manapov/miniconda3/envs/seal_detection/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:203: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-08-04 09:44:52,965 :: tensorflow - WARNING :: From /home/manapov/miniconda3/envs/seal_detection/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:207: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-08-04 09:44:52,966 :: tensorflow - WARNING :: From /home/manapov/miniconda3/envs/seal_detection/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:216: The name tf.is_variable_initialized is deprecated. Please use tf.compat.v1.is_variable_initialized instead.
+
+2020-08-04 09:44:53,937 :: tensorflow - WARNING :: From /home/manapov/miniconda3/envs/seal_detection/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:223: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-08-04 09:44:55,927 :: root - INFO :: MaskRCNN created, device: /cpu:0
+2020-08-04 09:44:55,939 :: werkzeug - INFO ::  * Running on http://127.0.0.1:8839/ (Press CTRL+C to quit)
+2020-08-04 09:44:55,940 :: werkzeug - INFO ::  * Restarting with stat
+2020-08-04 09:44:58,236 :: root - INFO :: Current logging level: DEBUG
+2020-08-04 09:44:58,236 :: tensorflow - WARNING :: From /home/manapov/seal_detect_api_LIMS/app.py:120: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-08-04 09:44:58,237 :: tensorflow - WARNING :: From /home/manapov/miniconda3/envs/seal_detection/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:541: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-08-04 09:44:58,243 :: tensorflow - WARNING :: From /home/manapov/miniconda3/envs/seal_detection/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:4432: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-08-04 09:44:58,261 :: tensorflow - WARNING :: From /home/manapov/miniconda3/envs/seal_detection/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:2139: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2020-08-04 09:44:58,263 :: tensorflow - WARNING :: From /home/manapov/miniconda3/envs/seal_detection/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:4267: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2020-08-04 09:44:59,957 :: tensorflow - WARNING :: From /home/manapov/miniconda3/envs/seal_detection/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:2239: The name tf.image.resize_nearest_neighbor is deprecated. Please use tf.compat.v1.image.resize_nearest_neighbor instead.
+
+2020-08-04 09:45:00,251 :: tensorflow - WARNING :: From /home/manapov/seal_detect_api_LIMS/mrcnn/model.py:341: The name tf.log is deprecated. Please use tf.math.log instead.
+
+2020-08-04 09:45:00,257 :: tensorflow - WARNING :: From /home/manapov/seal_detect_api_LIMS/mrcnn/model.py:399: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-08-04 09:45:00,262 :: tensorflow - WARNING :: From /home/manapov/seal_detect_api_LIMS/mrcnn/model.py:423: calling crop_and_resize_v1 (from tensorflow.python.ops.image_ops_impl) with box_ind is deprecated and will be removed in a future version.
+Instructions for updating:
+box_ind is deprecated, use box_indices instead
+2020-08-04 09:45:00,429 :: tensorflow - WARNING :: From /home/manapov/seal_detect_api_LIMS/mrcnn/model.py:720: The name tf.sets.set_intersection is deprecated. Please use tf.sets.intersection instead.
+
+2020-08-04 09:45:00,432 :: tensorflow - WARNING :: From /home/manapov/seal_detect_api_LIMS/mrcnn/model.py:722: The name tf.sparse_tensor_to_dense is deprecated. Please use tf.sparse.to_dense instead.
+
+2020-08-04 09:45:00,500 :: tensorflow - WARNING :: From /home/manapov/seal_detect_api_LIMS/mrcnn/model.py:772: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-08-04 09:45:00,728 :: root - DEBUG :: MaskRCNN MODEL_DIR: /home/manapov/seal_detect_api_LIMS/weights
+2020-08-04 09:45:00,728 :: root - DEBUG :: Loading weights: /home/manapov/seal_detect_api_LIMS/weights/seal20200221T1748/mask_rcnn_seal_0030.h5
+2020-08-04 09:45:01,594 :: tensorflow - WARNING :: From /home/manapov/miniconda3/envs/seal_detection/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:190: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-08-04 09:45:01,594 :: tensorflow - WARNING :: From /home/manapov/miniconda3/envs/seal_detection/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:197: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-08-04 09:45:01,594 :: tensorflow - WARNING :: From /home/manapov/miniconda3/envs/seal_detection/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:203: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-08-04 09:45:01,621 :: tensorflow - WARNING :: From /home/manapov/miniconda3/envs/seal_detection/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:207: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-08-04 09:45:01,621 :: tensorflow - WARNING :: From /home/manapov/miniconda3/envs/seal_detection/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:216: The name tf.is_variable_initialized is deprecated. Please use tf.compat.v1.is_variable_initialized instead.
+
+2020-08-04 09:45:02,671 :: tensorflow - WARNING :: From /home/manapov/miniconda3/envs/seal_detection/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:223: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-08-04 09:45:06,354 :: root - INFO :: MaskRCNN created, device: /cpu:0
+2020-08-04 09:45:06,365 :: werkzeug - WARNING ::  * Debugger is active!
+2020-08-04 09:45:06,366 :: werkzeug - INFO ::  * Debugger PIN: 150-610-881
+2020-08-04 09:45:10,011 :: werkzeug - INFO :: 127.0.0.1 - - [04/Aug/2020 09:45:10] "[37mGET / HTTP/1.1[0m" 200 -
+2020-08-04 09:45:10,034 :: werkzeug - INFO :: 127.0.0.1 - - [04/Aug/2020 09:45:10] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2020-08-04 09:45:10,035 :: werkzeug - INFO :: 127.0.0.1 - - [04/Aug/2020 09:45:10] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2020-08-04 09:45:10,036 :: werkzeug - INFO :: 127.0.0.1 - - [04/Aug/2020 09:45:10] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2020-08-04 09:45:10,042 :: werkzeug - INFO :: 127.0.0.1 - - [04/Aug/2020 09:45:10] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2020-08-04 09:45:10,170 :: werkzeug - INFO :: 127.0.0.1 - - [04/Aug/2020 09:45:10] "[36mHEAD /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+2020-08-04 09:45:10,505 :: werkzeug - INFO :: 127.0.0.1 - - [04/Aug/2020 09:45:10] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+2020-08-04 09:45:10,507 :: werkzeug - INFO :: 127.0.0.1 - - [04/Aug/2020 09:45:10] "[37mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 200 -
