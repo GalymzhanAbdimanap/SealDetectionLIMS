@@ -323,7 +323,7 @@ def async_file_processing(file_id, bytearr):
 
 #------------------------------------------------------------------------------
 
-@name_space.route("/seals")
+@name_space.route("/seals") # The name of the api method is assigned based on the article: https://javabeat.net/rest-api-best-practices/
 class SealDetector(Resource):
 	"""Accepts the input data and then send it for processing."""
 	
