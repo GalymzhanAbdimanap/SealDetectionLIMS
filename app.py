@@ -7,10 +7,11 @@ Takes params and writes logs according to severity level to file or output.
 
 Copyright (c) 2020 IDET.kz
 Written by Galymzhan Abdymanap.
+Version 1.1
 """
 
 # Address of this request dispatcher
-REQUEST_HOST_URL = "127.0.0.1"
+REQUEST_HOST_URL = "0.0.0.0"
 
 REQUEST_HOST_PORT = 8839
 
@@ -23,6 +24,9 @@ LOG_DIR_NAME = "logs"
 # Model
 WEIGHTS_DIR_NAME = "weights"
 SEAL_WEIGHTS_FILE_NAME = "mask_rcnn_seal_0030.h5"
+
+# Сhoose device type
+DEVICE = "/cpu:0"  # /cpu:0 or /gpu:0
 
 
 from flask import Flask, jsonify, abort, make_response,request, json, redirect, render_template
@@ -54,6 +58,7 @@ import matplotlib.image as mpimg
 
 # Import Mask RCNN
 # To find local version of the library
+# For the independence of the program from the built-in OS libraries, the Mask RCNN library is included in the program folder
 from mrcnn.config import Config
 from mrcnn import utils
 from mrcnn import visualize
@@ -153,7 +158,7 @@ class InferenceConfig(config.__class__):
 config = InferenceConfig()
 
 
-DEVICE = "/cpu:0"  # /cpu:0 or /gpu:0
+
 
 # Create model in inference mode
 with tf.device(DEVICE):
@@ -179,11 +184,11 @@ logging.info(f'MaskRCNN created, device: {DEVICE}')
 
 flask_app = Flask(__name__)
 app = Api(app = flask_app, 
-		  version = "1.0", 
+		  version = "1.1", 
 		  title = "Seal Detection", 
 		  description = "Asynchronous implementation of seals (stamps) detection using Mask R-CNN model.")
 
-name_space = app.namespace('detectSeal', description='For seal detection')
+name_space = app.namespace('idet', description='For seal detection')
 
 
 #------------------------------------------------------------------------------
@@ -229,8 +234,8 @@ def post_checking(masks, rois, max_inappropriate_cells_percent = 10):
 #------------------------------------------------------------------------------
 
 def detect_seal(image, min_probability = 0.95, min_width_height_ratio = 0.9):
-    """ Detects stamp (seal) in given image.
-        Returns True if detected with appropriate probability and width to height image ratio.
+    """Detects stamp (seal) in given image.
+    Returns True if detected with appropriate probability and width to height image ratio.
     """
     assert image is not None
 
@@ -264,8 +269,8 @@ def detect_seal(image, min_probability = 0.95, min_width_height_ratio = 0.9):
 #------------------------------------------------------------------------------
 
 def async_file_processing(file_id, bytearr):
-    """ Implements the body of async function for detecting stamps (seals) in given binary file with multy pages.
-        Calls API by RESPONSE_API_URL to save the results.
+    """Implements the body of async function for detecting stamps (seals) in given binary file with multy pages.
+    Calls API by RESPONSE_API_URL to save the results.
     """
     assert file_id
     assert len(bytearr) > 0
@@ -318,14 +323,14 @@ def async_file_processing(file_id, bytearr):
 
 #------------------------------------------------------------------------------
 
-@name_space.route("/")
-class MainClass(Resource):
-
+@name_space.route("/seals")
+class SealDetector(Resource):
+	"""Accepts the input data and then send it for processing."""
 	
 	@app.expect(parsers.file_upload, parsers.id_of_file, validate=True)		
 	def post(self):
-		""" Implements API of POST processing for detecting stamps (seals).
-		    Processing of each file goes asynchorously, function does not wait for result.
+		"""Implements API of POST processing for detecting stamps (seals).
+		Processing of each file goes asynchorously, function does not wait for result.
 		"""
 		logging.debug(f'Request: {request.method}')
 		
