@@ -95,7 +95,7 @@ Shapely==1.7.0
 six==1.12.0
 smmap2==2.0.5
 tensorboard==1.15.0
-tensorflow==1.15.2
+tensorflow==2.5.3
 tensorflow-estimator==1.15.1
 tensorflow-gpu==2.1.0
 tensorrt==5.1.5.0
